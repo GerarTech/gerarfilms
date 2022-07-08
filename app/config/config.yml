@@ -16,8 +16,8 @@ parameters:
     files_directory_mp3: '%kernel.root_dir%/../public_html/files/'
     files_directory_read: '/uploads/'
     files_directory_read_mp3: '/files/'
-    token_app: "4F5A9C3D9A86FA54EACEDDD635185"
-    fire_base_key: AIzaSyCg77N96veclCZBruelCXqKY5MVJc1nUds
+    token_app: ""
+    fire_base_key: 
 framework:
     session:
         gc_probability: 0
@@ -225,8 +225,8 @@ hwi_oauth:
     resource_owners:
         facebook:
             type:                facebook
-            client_id:           "2703176636427041"
-            client_secret:       "f232169d15aff67edf176effdef65e47"
+            client_id:           ""
+            client_secret:       ""
             scope:         "email"
             infos_url:     "https://graph.facebook.com/me?fields=id,name,email,picture.type(large)"
             paths:
@@ -234,6 +234,6 @@ hwi_oauth:
                 profilepicture: picture.data.url
         google:
             type:                google
-            client_id:           "690266354741-vg742hddgqcp5qumkmc3lvhv0dla6e07.apps.googleusercontent.com"
-            client_secret:       "m3a5C-q86wwReqOgbgd_NjJy"
+            client_id:           ""
+            client_secret:       ""
             scope:               "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"
