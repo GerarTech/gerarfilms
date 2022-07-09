@@ -14262,7 +14262,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.3.11"
+        "php": "8.1.1"
     },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
