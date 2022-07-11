@@ -3,7 +3,7 @@
 return [
     'services' => [
         
-        'easyplex' => [
+        'GerarFilms' => [
             'token' => env('TOKEN'),
             'tokenName' => 'api_token',
 

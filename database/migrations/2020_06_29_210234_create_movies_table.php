@@ -20,13 +20,11 @@ class CreateMoviesTable extends Migration
             $table->string('title');
             $table->string('imdb_external_id')->nullable();
             $table->string('original_name')->nullable();
-            $table->string('subtitle')->nullable();
             $table->text('overview')->nullable();
             $table->string('poster_path')->nullable();
             $table->string('backdrop_path')->nullable();
             $table->string('preview_path')->nullable();
             $table->float('vote_average')->unsigned()->nullable();
-            $table->string('trailer_url')->nullable();
             $table->float('vote_count')->unsigned()->nullable();
             $table->float('popularity')->unsigned()->nullable();
             $table->string('runtime')->nullable();
@@ -35,7 +33,7 @@ class CreateMoviesTable extends Migration
             $table->boolean('premuim')->default(0);
             $table->boolean('active')->default(1);
             $table->date('release_date')->nullable();
-            $table->integer('skiprecap_start_in')->default(0);
+            $table->boolean('skiprecap_start_in')->default(0);
             $table->boolean('hasrecap')->default(0);
             $table->boolean('pinned')->default(0);
             $table->timestamps();

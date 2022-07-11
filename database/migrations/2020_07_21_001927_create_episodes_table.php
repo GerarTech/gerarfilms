@@ -26,7 +26,7 @@ class CreateEpisodesTable extends Migration
             $table->float('vote_count')->unsigned()->nullable();
             $table->integer('views')->unsigned()->default(0);
             $table->date('air_date')->nullable();
-            $table->integer('skiprecap_start_in')->default(0);
+            $table->boolean('skiprecap_start_in')->default(0);
             $table->boolean('hasrecap')->default(0);
             $table->foreign('season_id')->references('id')->on('seasons')->onDelete('cascade');
             $table->timestamps();

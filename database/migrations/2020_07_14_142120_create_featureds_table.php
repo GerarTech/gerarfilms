@@ -19,12 +19,9 @@ class CreateFeaturedsTable extends Migration
             $table->integer('featured_id')->nullable();
             $table->string('title');
             $table->string('poster_path')->nullable();
-            $table->date('release_date')->nullable();
-            $table->float('vote_average')->unsigned()->nullable();
             $table->string('type')->nullable();
             $table->string('genre')->nullable();
             $table->boolean('premuim')->default(0);
-            $table->integer('position')->default(0);
             $table->boolean('enable_miniposter')->default(0);
             $table->string('miniposter')->nullable();
             $table->boolean('custom')->default(0);

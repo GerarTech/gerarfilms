@@ -29,9 +29,9 @@
                     </div>
                     <div class="row mt-5">
                         <div class="col-12 mt-xl-2">
-                            <p class="text-white font-weight-medium text-center">Copyright © 2020 EASYPLEX. All
+                            <p class="text-white font-weight-medium text-center">Copyright © 2020 GerarFilms. All
                                 rights reserved. Developed by <a class="text-white font-weight-medium text-center"
-                                                                 href="https://codecanyon.net/user/yobex">Y0bEX</a>.</p>
+                                                                 href="#">Y0bEX</a>.</p>
                         </div>
                     </div>
                 </div>

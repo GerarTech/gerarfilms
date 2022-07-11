@@ -21,7 +21,7 @@ class CreateSerieSubstitlesTable extends Migration
             $table->string('link')->nullable();
             $table->string('lang')->nullable();
             $table->string('type')->nullable();
-            $table->boolean('zip')->default(0);
+            $table->boolean('zip')->default(1);
             $table->boolean('status')->default(1);
             $table->foreign('episode_id')->references('id')->on('episodes')->onDelete('cascade');
             $table->timestamps();

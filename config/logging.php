@@ -38,7 +38,7 @@ return [
         'stack' => [
             'driver' => 'stack',
             'channels' => ['single'],
-            'ignore_exceptions' => true,
+            'ignore_exceptions' => false,
         ],
 
         'single' => [
@@ -95,11 +95,6 @@ return [
         'null' => [
             'driver' => 'monolog',
             'handler' => NullHandler::class,
-        ],
-
-        'none' => [
-            'driver' => 'monolog',
-            'handler' => \Monolog\Handler\NullHandler::class,
         ],
 
         'emergency' => [

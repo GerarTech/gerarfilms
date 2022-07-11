@@ -5,7 +5,7 @@ return [
      * Enable or disable the query detection.
      * If this is set to "null", the app.debug config value will be used.
      */
-    'enabled' => env('QUERY_DETECTOR_ENABLED', true),
+    'enabled' => env('QUERY_DETECTOR_ENABLED', false),
 
     /*
      * Threshold level for the N+1 query detection. If a relation query will be
@@ -56,7 +56,7 @@ return [
      *
      * JSON:
      * Writes the N+1 queries into the response body of your JSON responses
-       BeyondCode\QueryDetector\Outputs\Json::class
+     * \BeyondCode\QueryDetector\Outputs\Json::class
      *
      * Log:
      * Writes the N+1 queries into the Laravel.log file
@@ -67,8 +67,7 @@ return [
         \BeyondCode\QueryDetector\Outputs\Log::class,
         \BeyondCode\QueryDetector\Outputs\Json::class,
         \BeyondCode\QueryDetector\Outputs\Console::class,
-        //\BeyondCode\QueryDetector\Outputs\Debugbar::class,
+        \BeyondCode\QueryDetector\Outputs\Debugbar::class,
         \BeyondCode\QueryDetector\Outputs\Log::class,
-        \BeyondCode\QueryDetector\Outputs\Json::class,
     ]
 ];

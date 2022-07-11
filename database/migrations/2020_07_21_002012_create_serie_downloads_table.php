@@ -19,8 +19,6 @@ class CreateSerieDownloadsTable extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('episode_id')->unsigned();
             $table->string('server');
-            $table->string('header')->nullable();
-            $table->string('useragent')->nullable();
             $table->string('link');
             $table->string('lang')->nullable();
             $table->string('video_name')->nullable();

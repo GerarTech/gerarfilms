@@ -19,17 +19,12 @@ class CreateLivetvVideosTable extends Migration
             $table->bigInteger('livetv_id')->unsigned();
             $table->string('server');
             $table->string('link');
-            $table->string('header')->nullable();
-            $table->string('useragent')->nullable();
             $table->string('lang')->nullable();
             $table->string('livetv_name')->nullable();
             $table->boolean('embed')->default(0);
             $table->boolean('youtubelink')->default(0);
             $table->boolean('hls')->default(0);
             $table->boolean('supported_hosts')->default(0);
-            $table->boolean('drm')->default(0);
-            $table->string('drmuuid')->nullable();
-            $table->string('drmlicenceuri')->nullable();
             $table->boolean('status')->default(1);
             $table->foreign('livetv_id')->references('id')->on('livetvs')->onDelete('cascade');
             $table->timestamps();

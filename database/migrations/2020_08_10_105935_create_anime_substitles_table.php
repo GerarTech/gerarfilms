@@ -21,7 +21,6 @@ class CreateAnimeSubstitlesTable extends Migration
             $table->string('link')->nullable();
             $table->string('lang')->nullable();
             $table->string('type')->nullable();
-            $table->boolean('zip')->default(0);
             $table->boolean('status')->default(1);
             $table->foreign('anime_episode_id')->references('id')->on('anime_episodes')->onDelete('cascade');
             $table->timestamps();

@@ -20,7 +20,6 @@ class CreateMovieSubstitlesTable extends Migration
             $table->string('link');
             $table->string('lang')->nullable();
             $table->string('type')->nullable();
-            $table->boolean('zip')->default(0);
             $table->boolean('status')->default(1);
             $table->foreign('movie_id')->references('id')->on('movies')->onDelete('cascade');
             $table->timestamps();

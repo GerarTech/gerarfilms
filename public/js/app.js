@@ -14464,7 +14464,7 @@
                                                                 s("div", { staticClass: "row" }, [
                                                                     s("div", { staticClass: "col-md-4" }, [
                                                                         s("div", { staticClass: "form-group" }, [
-                                                                            s("label", { attrs: { for: "user_agent" } }, [t._v("Default User Agent ( EasyPlexPlayer , vlc , MxPlayer and Embed )")]),
+                                                                            s("label", { attrs: { for: "user_agent" } }, [t._v("Default User Agent ( GerarFilmsPlayer , vlc , MxPlayer and Embed )")]),
                                                                             t._v(" "),
                                                                             s("p", { staticClass: "text-primary" }, [t._v("\n                          Enter your prefered UserAgent to use it inside the players\n                        ")]),
                                                                             t._v(" "),

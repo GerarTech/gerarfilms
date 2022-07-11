@@ -21,12 +21,10 @@ class CreateAnimesTable extends Migration
             $table->string('original_name');
             $table->string('imdb_external_id');
             $table->text('overview')->nullable();
-            $table->string('subtitle')->nullable();
             $table->string('poster_path')->nullable();
             $table->string('backdrop_path')->nullable();
             $table->string('preview_path')->nullable();
-            $table->string('trailer_url')->nullable();
-            $table->integer('views')->unsigned()->default(0);
+            $table->string('views')->nullable();
             $table->float('vote_average')->unsigned()->nullable();
             $table->float('vote_count')->unsigned()->nullable();
             $table->float('popularity')->unsigned()->nullable();

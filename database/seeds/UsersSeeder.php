@@ -22,7 +22,7 @@ class UsersSeeder extends Seeder
                 'role' => 'admin',
                 'premuim' => true,
                 'manual_premuim' => false,
-                'email' => 'admin@easyplex.com',
+                'email' => 'admin@GerarFilms.com',
                 'password' => bcrypt('123456'),
 
             ],
@@ -31,7 +31,7 @@ class UsersSeeder extends Seeder
                 'role' => 'user',
                 'premuim' => false,
                 'manual_premuim' => false,
-                'email' => 'user@easyplex.com',
+                'email' => 'user@GerarFilms.com',
                 'password' => bcrypt('123456')
 
             ]

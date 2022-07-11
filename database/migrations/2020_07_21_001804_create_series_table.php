@@ -20,11 +20,9 @@ class CreateSeriesTable extends Migration
             $table->string('name');
             $table->string('original_name');
             $table->string('imdb_external_id');
-            $table->string('subtitle')->nullable();
             $table->text('overview')->nullable();
             $table->string('poster_path')->nullable();
             $table->string('backdrop_path')->nullable();
-            $table->string('trailer_url')->nullable();
             $table->string('preview_path')->nullable();
             $table->integer('views')->unsigned()->default(0);
             $table->float('vote_average')->unsigned()->nullable();

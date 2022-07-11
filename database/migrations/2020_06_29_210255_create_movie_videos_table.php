@@ -29,9 +29,6 @@ class CreateMovieVideosTable extends Migration
             $table->boolean('hls')->default(0);
             $table->boolean('supported_hosts')->default(0);
             $table->boolean('downloadonly')->default(0);
-            $table->boolean('drm')->default(0);
-            $table->string('drmuuid')->nullable();
-            $table->string('drmlicenceuri')->nullable();
             $table->boolean('status')->default(1);
             $table->foreign('movie_id')->references('id')->on('movies')->onDelete('cascade');
             $table->timestamps();

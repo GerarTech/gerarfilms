@@ -20,7 +20,6 @@ class CreateMovieDownloadsTable extends Migration
             $table->string('server')->nullable();
             $table->string('header')->nullable();
             $table->string('useragent')->nullable();
-            $table->string('video_name')->nullable();
             $table->string('link');
             $table->string('lang')->nullable();
             $table->boolean('youtubelink')->default(0);

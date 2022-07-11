@@ -20,7 +20,6 @@ class CreateResumesTable extends Migration
             $table->integer('resumeWindow')->nullable();
             $table->integer('resumePosition')->nullable();
             $table->integer('movieDuration')->nullable();
-            $table->integer('deviceId')->nullable();
             $table->timestamps();
         });
     }

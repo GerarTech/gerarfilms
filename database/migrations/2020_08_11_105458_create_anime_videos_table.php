@@ -28,9 +28,6 @@ class CreateAnimeVideosTable extends Migration
             $table->boolean('youtubelink')->default(0);
             $table->boolean('hls')->default(0);
             $table->boolean('supported_hosts')->default(0);
-            $table->boolean('drm')->default(0);
-            $table->string('drmuuid')->nullable();
-            $table->string('drmlicenceuri')->nullable();
             $table->boolean('status')->default(1);
             $table->foreign('anime_episode_id')->references('id')->on('anime_episodes')->onDelete('cascade');
             $table->timestamps();

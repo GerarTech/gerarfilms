@@ -26,9 +26,6 @@ class CreateUsersTable extends Migration
             $table->string('pack_name')->nullable();
             $table->string('pack_id')->nullable();
             $table->string('transaction_id')->nullable();
-            $table->string('provider_name')->nullable();
-            $table->string('provider_id')->nullable();
-            $table->string('type')->nullable();
             $table->string('start_at')->nullable();
             $table->string('expired_in')->nullable();
             $table->string('password');
