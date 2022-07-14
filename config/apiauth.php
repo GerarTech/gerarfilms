@@ -3,7 +3,7 @@
 return [
     'services' => [
         
-        'GerarFilms' => [
+        'gerarfilms' => [
             'token' => env('TOKEN'),
             'tokenName' => 'api_token',
 

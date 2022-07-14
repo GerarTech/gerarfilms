@@ -92,7 +92,7 @@ class VideoController extends Controller
                 $data = [
                     self::STATUS => 200,
                     'video_path' => $request->root() . '/api/video/' . $filename,
-                    'server' => config('app.name', 'GerarFilms'),
+                    'server' => config('app.name', 'gerarfilms'),
                     self::MESSAGE => 'successfully uploaded'
                 ];
 
@@ -180,7 +180,7 @@ class VideoController extends Controller
                 $data = [
                     self::STATUS => 200,
                     'video_path' => $request->root() . '/api/video/' . $filename,
-                    'server' => config('app.name', 'GerarFilms'),
+                    'server' => config('app.name', 'gerarfilms'),
                     self::MESSAGE => 'successfully uploaded'
                 ];
 

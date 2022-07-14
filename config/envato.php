@@ -14,5 +14,5 @@ return [
     /*
      * you can set any name for this purpose.
      * */
-    'app_name' => 'GerarFilms',
+    'app_name' => 'gerarfilms',
 ];

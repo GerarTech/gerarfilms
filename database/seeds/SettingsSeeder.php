@@ -13,7 +13,7 @@ class SettingsSeeder extends Seeder
     public function run()
     {
         Setting::create([
-            'app_name' => 'GerarFilms',
+            'app_name' => 'gerarfilms',
             'authorization' => '',
             'tmdb_api_key' => '',
             'purchase_key' => '',
@@ -85,7 +85,7 @@ class SettingsSeeder extends Seeder
             'resume_offline' => 1,
             'unityads_banner' => 0,
             'unityads_interstitial' => 0,
-            'user_agent' => 'GerarFilms',
+            'user_agent' => 'gerarfilms',
             'unityads_banner' => 0,
             'unityads_interstitial' => 0,
             'streaming' => 1,

@@ -3,6 +3,9 @@
 
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Http\Request;
+use Illuminate\Foundation\Bootstrap\RegisterFacades;
+use Illuminate\Foundation\Bootstrap\LoadConfiguration;
+
 
 header('Access-Control-Allow-Origin: *');
 header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method, Authorization, X-CSRF-TOKEN, X-LiteSpeed-Cache-Control");
@@ -49,6 +52,11 @@ require __DIR__ . '/../vendor/autoload.php';
 */
 
 $app = require_once __DIR__ . '/../bootstrap/app.php';
+
+
+
+(new LoadConfiguration())->bootstrap($app);//  <------- Required for next line
+(new RegisterFacades())->bootstrap($app);//  <------- Add this line
 
 
 
