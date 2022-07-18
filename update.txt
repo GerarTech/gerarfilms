@@ -1,0 +1,5 @@
+admin panel / src / AppBundle/Form/AdsType.php
+admin panel / src / AppBundle/Resources/views/Home/ads.html.twig
+admin panel / src / AppBundle/Controller/SubscriptionController.php
+admin panel / src / AppBundle/Controller/VersionController.php
+admin panel / src / AppBundle/ Resources/ views/ Home/ ads.html.twig
