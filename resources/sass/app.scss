@@ -1,0 +1,175 @@
+// Variables
+@import 'variables';
+
+@import '~bootstrap/scss/bootstrap';
+@import 'node_modules/vue-multiselect/dist/vue-multiselect.min';
+@import 'node_modules/vuejs-dialog/dist/vuejs-dialog.min';
+@import 'node_modules/material-design-icons/iconfont/material-icons';
+
+.app-header {
+    background-color: $body-bg;
+    border: 0;
+}
+
+.navbar-brand {
+    height: 50px !important;
+
+    img {
+        margin-left: 0 auto;
+        height: 100% !important;
+        width: auto !important;
+        max-width: 160px !important;
+    }
+
+    .navbar-brand-minimized {
+        max-width: 50px !important;
+    }
+}
+
+.login-brand {
+    height: 90px !important;
+
+    img {
+        margin-left: 0 auto;
+        height: 100% !important;
+        width: auto !important;
+        max-width: 240px !important;
+    }
+}
+
+.app-footer {
+    background-color: $gray;
+    border: 0;
+}
+
+.breadcrumb {
+    border-radius: 0;
+    border-bottom: 0;
+    background-color: $gray;
+    color: $white;
+
+    .breadcrumb-item.active {
+        color: $white;
+    }
+}
+
+.card {
+    border: 0;
+    color: $white !important;
+    background-color: $card-bg;
+}
+
+table {
+    color: $white !important;
+
+    tr:hover {
+        color: $white !important;
+    }
+}
+
+.form-control {
+    border: 0;
+    border-radius: 5px;
+}
+
+.tab-content {
+    background: $gray;
+}
+
+.nav-tabs .nav-link {
+    color: $white;
+}
+
+.dropdown-menu {
+    color: $white !important;
+    background-color: $gray;
+}
+
+.dropdown-item {
+    color: $white !important;
+
+    &:hover,
+    &:focus {
+        background-color: $blue;
+        cursor: pointer;
+    }
+
+    i {
+        color: $white !important;
+    }
+}
+
+.more-icon {
+    color: #687178;
+
+    &:hover {
+        color: #343a40;
+    }
+}
+
+.page-link {
+    background-color: $gray;
+    border: 0;
+
+    &:hover {
+        background-color: lighten($gray, 10%);
+    }
+}
+
+i {
+    vertical-align: middle;
+}
+
+.material-icons.md-14 {
+    font-size: 14px;
+}
+
+.material-icons.md-16 {
+    font-size: 16px;
+}
+
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+a {
+    text-decoration: none;
+}
+
+label {
+    margin-bottom: 0 !important;
+}
+
+.multiselect__tag {
+    background: $blue !important;
+}
+
+.multiselect__option--highlight {
+    background: $blue !important;
+
+    &:after {
+        background: $blue !important;
+    }
+}
+
+.multiselect__tag-icon {
+    &:after {
+        color: $white !important;
+    }
+
+    &:hover {
+        background: $red !important;
+    }
+}
